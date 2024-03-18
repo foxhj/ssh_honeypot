@@ -21,7 +21,7 @@ options:
                         log credentials to csv file FILENAME (default is
                         creds.csv)
 
-"$ ssh-keygen -i <KEY_NAME> -t rsa" to generate key if you havent already
+"$ ssh-keygen -f <KEY_NAME> -t rsa" to generate key if you havent already
 ```
 
 * `pip install paramiko` to install the only required nonstandard library.

@@ -1,6 +1,6 @@
 # Secure Shell Honeypot v0.1
 
-* Simple script that stands up a dummy SSH server that logs access attempts and the credentials used into the console or into an event and/or a CSV file.
+* Simple script that stands up a dummy SSH server that logs access attempts and the credentials used into the console or into an event log and/or a CSV file.
 
 ```
 usage: ssh_honeypot.py [-h] [-l [LOGFILE]] [-c [CSV]]

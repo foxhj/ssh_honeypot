@@ -66,7 +66,7 @@ class SSHServer(paramiko.ServerInterface):
                 while True:
                     client_sock, addr = self.sock.accept()
                     self.log(f'[+] Received connection from {addr[0]}:{addr[1]}.')
-                    client_thread = threading.Thread(target=self.handle_client_conn, args = (client_sock,))
+                    client_thread = threading.Thread(target=self.handle_client_conn, args=(client_sock,))
                     client_thread.start()
             except Exception as e:
                 self.log(f'[-] Client socket error: {e}')

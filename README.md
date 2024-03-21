@@ -1,28 +1,8 @@
 # Secure Shell Honeypot
 
-* Simple script that stands up a dummy SSH server that logs access attempts and the credentials used into the console or into an event log and/or a CSV file.
+Simple script that stands up a dummy SSH server that logs access attempts and the credentials used into the console or into an event log and/or a CSV file.
 
-```
-usage: ssh_honeypot.py [-h] [-l [LOGFILE]] [-c [CSV]]
-                       server_address server_port server_key
-
-SSH Honeypot written using the Paramiko library to log access attempts and cleartext credentials.
-
-positional arguments:
-  server_address        IPv4 address the server will listen on
-  server_port           port the server will listen on
-  server_key            RSA SSH hostkey (/path/to/private.key)
-
-options:
-  -h, --help            show this help message and exit
-  -l [LOGFILE], --logfile [LOGFILE]
-                        log events to file LOGFILE (default is ./honeypot.log)
-  -c [CSV], --csv [CSV]
-                        log credentials to csv file FILENAME (default is
-                        creds.csv)
-
-"$ ssh-keygen -f <KEY_NAME> -t rsa" to generate key if you havent already
-```
+![Usage example](./img/usage_example.png)
 
 * `pip install paramiko` to install the only required nonstandard library.
 
